@@ -1,0 +1,15 @@
+<h1>Stupid Coaching</h1>
+<p>
+
+  <h2><%= @question.capitalize %></h2>
+  <% if @question == "I am going to work" %>
+    <h2><%= @answer = "Great!" %></h2>
+  <% elsif @question [-1] ==  "?" %>
+    <h2><%= @answer = "Silly question, get dressed and go to work!" %></h2>
+  <% else %>
+    <h2><%= @answer = "I don't care, get dressed and go to work!" %></h2>
+  <% end %>
+
+</p>
+
+<%= link_to "Ask a new question", ask_path %>
